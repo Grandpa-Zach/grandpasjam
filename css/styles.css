@@ -41,7 +41,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 238, 9, 121;
+  --bs-primary-rgb: #cd5407;
   --bs-secondary-rgb: 255, 106, 0;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -76,18 +76,27 @@
   }
 }
 
+@import url("https://fonts.adobe.com/fonts/proxima-nova");
+
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  /* font-family: var(--bs-body-font-family);
+  font-weight: var(--bs-body-font-weight); */
   font-size: var(--bs-body-font-size);
-  font-weight: var(--bs-body-font-weight);
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 100;
   line-height: var(--bs-body-line-height);
-  color: var(--bs-body-color);
+  /* color: var(--bs-body-color); */
+  color: white;
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  /* background-color: var(--bs-body-bg); */
+  background-color: black;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+
 
 hr {
   margin: 1rem 0;
@@ -11305,13 +11314,13 @@ html {
   background-color: rgba(0, 0, 0, 0.7);
 }
 .navbar-custom .navbar-brand {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-size: 1rem;
   letter-spacing: 0.1rem;
   font-weight: 700;
 }
 .navbar-custom .navbar-nav .nav-item .nav-link {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
@@ -11320,13 +11329,13 @@ html {
 header.masthead {
   position: relative;
   overflow: hidden;
-  padding-top: calc(7rem + 72px);
-  padding-bottom: 7rem;
-  background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%);
+  padding-top: 15%;
+  /* padding-bottom: 7rem;
+  background: linear-gradient(0deg, #cd5407 0%, #7b27fc 100%);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
-  background-size: cover;
+  background-size: cover; */
 }
 header.masthead .masthead-content {
   z-index: 1;
@@ -11342,7 +11351,7 @@ header.masthead .bg-circle {
   z-index: 0;
   position: absolute;
   border-radius: 100%;
-  background: linear-gradient(0deg, #ee0979 0%, #ff6a00 100%);
+  background: linear-gradient(0deg, #7b27fc 0%, #cd5407 100%);
 }
 header.masthead .bg-circle-1 {
   height: 90rem;
@@ -11370,10 +11379,10 @@ header.masthead .bg-circle-4 {
 }
 
 @media (min-width: 992px) {
-  header.masthead {
-    padding-top: calc(10rem + 55px);
+  /* header.masthead {
+    padding-top: 15%;
     padding-bottom: 10rem;
-  }
+  } */
   header.masthead .masthead-content .masthead-heading {
     font-size: 6rem;
   }
