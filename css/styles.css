@@ -106,6 +106,12 @@ body {
   padding-left: 25%;
   padding-right: 25%;
 }
+
+.saveTheDate {
+  margin-left: 27%;
+  margin-right: 27%;
+}
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .logoWhite {
@@ -122,6 +128,11 @@ body {
 
   #zachVideo {
     width: 100%;
+  }
+
+  .saveTheDate {
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 
