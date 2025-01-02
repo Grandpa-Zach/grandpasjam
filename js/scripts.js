@@ -6,17 +6,21 @@
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
 
-const slidesContainer = document.getElementById("slides-container");
-const slide = document.querySelector(".slide");
-const prevButton = document.getElementById("slide-arrow-prev");
-const nextButton = document.getElementById("slide-arrow-next");
+let slideIndex = 0;
+showSlides(slideIndex);
+                          
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
 
-nextButton.addEventListener("click", () => {
-  const slideWidth = slide.clientWidth;
-  slidesContainer.scrollLeft += slideWidth;
-});
-
-prevButton.addEventListener("click", () => {
-  const slideWidth = slide.clientWidth;
-  slidesContainer.scrollLeft -= slideWidth;
-});
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slides");
+  if (n >= slides.length) { slideIndex = 0 }
+  if (n < 0) { slideIndex = slides.length - 1 }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slides[slideIndex].style.display = "block"; 
+}
+                    
